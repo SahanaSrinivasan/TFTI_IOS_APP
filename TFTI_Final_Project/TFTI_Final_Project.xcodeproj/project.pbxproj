@@ -12,6 +12,12 @@
 		5A12470C1EADDF3E00EF2656 /* GlobalCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12470B1EADDF3E00EF2656 /* GlobalCellViewController.swift */; };
 		5A12470E1EAE10C100EF2656 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12470D1EAE10C100EF2656 /* TabBarViewController.swift */; };
 		5A1247101EAE119800EF2656 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12470F1EAE119800EF2656 /* Event.swift */; };
+		5A1247121EAEBC4D00EF2656 /* create.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1247111EAEBC4D00EF2656 /* create.png */; };
+		5A1247141EAEEBB200EF2656 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247131EAEEBB200EF2656 /* DetailsViewController.swift */; };
+		5A1247161EAEF0F100EF2656 /* PersonalCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247151EAEF0F100EF2656 /* PersonalCellViewController.swift */; };
+		5A1247181EAEF17E00EF2656 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247171EAEF17E00EF2656 /* CreateViewController.swift */; };
+		5A12471A1EAEF2DD00EF2656 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247191EAEF2DD00EF2656 /* LoginViewController.swift */; };
+		5A12471C1EAEF2F000EF2656 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12471B1EAEF2F000EF2656 /* SignupViewController.swift */; };
 		5AFB39E51E9F701D00D84659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB39E41E9F701D00D84659 /* AppDelegate.swift */; };
 		5AFB39E71E9F701D00D84659 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB39E61E9F701D00D84659 /* RootViewController.swift */; };
 		5AFB39E91E9F701D00D84659 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB39E81E9F701D00D84659 /* DataViewController.swift */; };
@@ -51,6 +57,12 @@
 		5A12470B1EADDF3E00EF2656 /* GlobalCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalCellViewController.swift; sourceTree = "<group>"; };
 		5A12470D1EAE10C100EF2656 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		5A12470F1EAE119800EF2656 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5A1247111EAEBC4D00EF2656 /* create.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = create.png; path = ../../../../Desktop/create.png; sourceTree = "<group>"; };
+		5A1247131EAEEBB200EF2656 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		5A1247151EAEF0F100EF2656 /* PersonalCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCellViewController.swift; sourceTree = "<group>"; };
+		5A1247171EAEF17E00EF2656 /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		5A1247191EAEF2DD00EF2656 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5A12471B1EAEF2F000EF2656 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		5AFB39E11E9F701D00D84659 /* TFTI_Final_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFTI_Final_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFB39E41E9F701D00D84659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AFB39E61E9F701D00D84659 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +120,11 @@
 				5A1247091EADDDFF00EF2656 /* PersonalViewController.swift */,
 				5A12470B1EADDF3E00EF2656 /* GlobalCellViewController.swift */,
 				5A12470D1EAE10C100EF2656 /* TabBarViewController.swift */,
+				5A1247131EAEEBB200EF2656 /* DetailsViewController.swift */,
+				5A1247151EAEF0F100EF2656 /* PersonalCellViewController.swift */,
+				5A1247171EAEF17E00EF2656 /* CreateViewController.swift */,
+				5A1247191EAEF2DD00EF2656 /* LoginViewController.swift */,
+				5A12471B1EAEF2F000EF2656 /* SignupViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -147,6 +164,7 @@
 				5A1247061EADA7BE00EF2656 /* Model */,
 				5A1247041EADA7A300EF2656 /* Controller */,
 				5AFB39EC1E9F701D00D84659 /* Main.storyboard */,
+				5A1247111EAEBC4D00EF2656 /* create.png */,
 				5AFB3A1C1E9F761300D84659 /* user.png */,
 				5AFB39EF1E9F701D00D84659 /* Assets.xcassets */,
 				5AFB3A1A1E9F73F300D84659 /* settings.png */,
@@ -288,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFB3A1B1E9F73F300D84659 /* settings.png in Resources */,
+				5A1247121EAEBC4D00EF2656 /* create.png in Resources */,
 				5AFB3A191E9F73E600D84659 /* me.png in Resources */,
 				5AFB3A171E9F73DA00D84659 /* earth.png in Resources */,
 				5AFB39F31E9F701D00D84659 /* LaunchScreen.storyboard in Resources */,
@@ -318,14 +337,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A12471A1EAEF2DD00EF2656 /* LoginViewController.swift in Sources */,
 				5AFB39E71E9F701D00D84659 /* RootViewController.swift in Sources */,
 				5A12470C1EADDF3E00EF2656 /* GlobalCellViewController.swift in Sources */,
 				5A1247081EADDDED00EF2656 /* GlobalViewController.swift in Sources */,
+				5A1247141EAEEBB200EF2656 /* DetailsViewController.swift in Sources */,
 				5AFB39EB1E9F701D00D84659 /* ModelController.swift in Sources */,
 				5A1247101EAE119800EF2656 /* Event.swift in Sources */,
 				5A12470E1EAE10C100EF2656 /* TabBarViewController.swift in Sources */,
 				5AFB3A1F1E9F782D00D84659 /* eventviewcell.swift in Sources */,
+				5A1247161EAEF0F100EF2656 /* PersonalCellViewController.swift in Sources */,
+				5A1247181EAEF17E00EF2656 /* CreateViewController.swift in Sources */,
 				5AFB39E91E9F701D00D84659 /* DataViewController.swift in Sources */,
+				5A12471C1EAEF2F000EF2656 /* SignupViewController.swift in Sources */,
 				5AFB39E51E9F701D00D84659 /* AppDelegate.swift in Sources */,
 				5A12470A1EADDE0000EF2656 /* PersonalViewController.swift in Sources */,
 			);
