@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234301421EB33EC600077687 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234301411EB33EC600077687 /* GoogleService-Info.plist */; };
+		28067684E2098280FE903A99 /* Pods_TFTI_Final_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0151F9674E45984A84B00278 /* Pods_TFTI_Final_ProjectTests.framework */; };
 		5A1247081EADDDED00EF2656 /* GlobalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247071EADDDED00EF2656 /* GlobalViewController.swift */; };
 		5A12470A1EADDE0000EF2656 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247091EADDDFF00EF2656 /* PersonalViewController.swift */; };
 		5A12470C1EADDF3E00EF2656 /* GlobalCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12470B1EADDF3E00EF2656 /* GlobalCellViewController.swift */; };
@@ -27,6 +29,8 @@
 		5AFB39FE1E9F701E00D84659 /* TFTI_Final_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB39FD1E9F701E00D84659 /* TFTI_Final_ProjectTests.swift */; };
 		5AFB3A091E9F701E00D84659 /* TFTI_Final_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB3A081E9F701E00D84659 /* TFTI_Final_ProjectUITests.swift */; };
 		5AFB3A1F1E9F782D00D84659 /* eventviewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB3A1E1E9F782D00D84659 /* eventviewcell.swift */; };
+		60FF00C25629639AFB611133 /* Pods_TFTI_Final_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7388701F302A9E29C12834DD /* Pods_TFTI_Final_Project.framework */; };
+		F4F71B1E12C63E4F46F989D5 /* Pods_TFTI_Final_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA22D5ABC1BD603AB3C2378 /* Pods_TFTI_Final_ProjectUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0151F9674E45984A84B00278 /* Pods_TFTI_Final_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFTI_Final_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA22D5ABC1BD603AB3C2378 /* Pods_TFTI_Final_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFTI_Final_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		234301411EB33EC600077687 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A1247071EADDDED00EF2656 /* GlobalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalViewController.swift; sourceTree = "<group>"; };
 		5A1247091EADDDFF00EF2656 /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		5A12470B1EADDF3E00EF2656 /* GlobalCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalCellViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +80,13 @@
 		5AFB3A081E9F701E00D84659 /* TFTI_Final_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFTI_Final_ProjectUITests.swift; sourceTree = "<group>"; };
 		5AFB3A0A1E9F701E00D84659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AFB3A1E1E9F782D00D84659 /* eventviewcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventviewcell.swift; sourceTree = "<group>"; };
+		6CBFBA76CEA6A9EFC32C7701 /* Pods-TFTI_Final_ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFTI_Final_ProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TFTI_Final_ProjectUITests/Pods-TFTI_Final_ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6CDD18871F0365B21A990E56 /* Pods-TFTI_Final_ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFTI_Final_ProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFTI_Final_ProjectUITests/Pods-TFTI_Final_ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7388701F302A9E29C12834DD /* Pods_TFTI_Final_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFTI_Final_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C712B9B7FB91AC1F7B27B19 /* Pods-TFTI_Final_ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFTI_Final_ProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TFTI_Final_ProjectTests/Pods-TFTI_Final_ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B461A8A6268CEF5B283BDCA4 /* Pods-TFTI_Final_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFTI_Final_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFTI_Final_Project/Pods-TFTI_Final_Project.release.xcconfig"; sourceTree = "<group>"; };
+		D27DB675482B87C80371038B /* Pods-TFTI_Final_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFTI_Final_Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TFTI_Final_Project/Pods-TFTI_Final_Project.debug.xcconfig"; sourceTree = "<group>"; };
+		F7B226C790A6EC3514EF4F38 /* Pods-TFTI_Final_ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFTI_Final_ProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFTI_Final_ProjectTests/Pods-TFTI_Final_ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60FF00C25629639AFB611133 /* Pods_TFTI_Final_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28067684E2098280FE903A99 /* Pods_TFTI_Final_ProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F71B1E12C63E4F46F989D5 /* Pods_TFTI_Final_ProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +152,8 @@
 				5AFB39FC1E9F701E00D84659 /* TFTI_Final_ProjectTests */,
 				5AFB3A071E9F701E00D84659 /* TFTI_Final_ProjectUITests */,
 				5AFB39E21E9F701D00D84659 /* Products */,
+				96CC79E0F87210D568A526EB /* Pods */,
+				C465A208EB72F23F2803D3BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +176,7 @@
 				5AFB39EF1E9F701D00D84659 /* Assets.xcassets */,
 				5AFB39F11E9F701D00D84659 /* LaunchScreen.storyboard */,
 				5AFB39F41E9F701D00D84659 /* Info.plist */,
+				234301411EB33EC600077687 /* GoogleService-Info.plist */,
 				5AFB3A1E1E9F782D00D84659 /* eventviewcell.swift */,
 			);
 			path = TFTI_Final_Project;
@@ -180,6 +200,29 @@
 			path = TFTI_Final_ProjectUITests;
 			sourceTree = "<group>";
 		};
+		96CC79E0F87210D568A526EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D27DB675482B87C80371038B /* Pods-TFTI_Final_Project.debug.xcconfig */,
+				B461A8A6268CEF5B283BDCA4 /* Pods-TFTI_Final_Project.release.xcconfig */,
+				8C712B9B7FB91AC1F7B27B19 /* Pods-TFTI_Final_ProjectTests.debug.xcconfig */,
+				F7B226C790A6EC3514EF4F38 /* Pods-TFTI_Final_ProjectTests.release.xcconfig */,
+				6CBFBA76CEA6A9EFC32C7701 /* Pods-TFTI_Final_ProjectUITests.debug.xcconfig */,
+				6CDD18871F0365B21A990E56 /* Pods-TFTI_Final_ProjectUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C465A208EB72F23F2803D3BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7388701F302A9E29C12834DD /* Pods_TFTI_Final_Project.framework */,
+				0151F9674E45984A84B00278 /* Pods_TFTI_Final_ProjectTests.framework */,
+				1AA22D5ABC1BD603AB3C2378 /* Pods_TFTI_Final_ProjectUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AFB3A0D1E9F701E00D84659 /* Build configuration list for PBXNativeTarget "TFTI_Final_Project" */;
 			buildPhases = (
+				75FB58722A0E2EFC342719DA /* [CP] Check Pods Manifest.lock */,
 				5AFB39DD1E9F701D00D84659 /* Sources */,
 				5AFB39DE1E9F701D00D84659 /* Frameworks */,
 				5AFB39DF1E9F701D00D84659 /* Resources */,
+				5217E7E09CD11125EFD59113 /* [CP] Embed Pods Frameworks */,
+				7BC041AE8585BB597DCFE6B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AFB3A101E9F701E00D84659 /* Build configuration list for PBXNativeTarget "TFTI_Final_ProjectTests" */;
 			buildPhases = (
+				4058389D934BBC0A09786BB0 /* [CP] Check Pods Manifest.lock */,
 				5AFB39F51E9F701E00D84659 /* Sources */,
 				5AFB39F61E9F701E00D84659 /* Frameworks */,
 				5AFB39F71E9F701E00D84659 /* Resources */,
+				82EF3EC6B4AC6E71DA78EE94 /* [CP] Embed Pods Frameworks */,
+				7A4FDCC888779E4A09C5A715 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,9 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AFB3A131E9F701E00D84659 /* Build configuration list for PBXNativeTarget "TFTI_Final_ProjectUITests" */;
 			buildPhases = (
+				DCD9AC7741F220685D944FB4 /* [CP] Check Pods Manifest.lock */,
 				5AFB3A001E9F701E00D84659 /* Sources */,
 				5AFB3A011E9F701E00D84659 /* Frameworks */,
 				5AFB3A021E9F701E00D84659 /* Resources */,
+				1D6825FB1DDD62766EC292FA /* [CP] Embed Pods Frameworks */,
+				3C4A949FFECE44E64DAC9C73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFB39F31E9F701D00D84659 /* LaunchScreen.storyboard in Resources */,
+				234301421EB33EC600077687 /* GoogleService-Info.plist in Resources */,
 				5AFB39F01E9F701D00D84659 /* Assets.xcassets in Resources */,
 				5AFB39EE1E9F701D00D84659 /* Main.storyboard in Resources */,
 			);
@@ -311,6 +364,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D6825FB1DDD62766EC292FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TFTI_Final_ProjectUITests/Pods-TFTI_Final_ProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C4A949FFECE44E64DAC9C73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TFTI_Final_ProjectUITests/Pods-TFTI_Final_ProjectUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4058389D934BBC0A09786BB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5217E7E09CD11125EFD59113 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TFTI_Final_Project/Pods-TFTI_Final_Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75FB58722A0E2EFC342719DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A4FDCC888779E4A09C5A715 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TFTI_Final_ProjectTests/Pods-TFTI_Final_ProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BC041AE8585BB597DCFE6B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TFTI_Final_Project/Pods-TFTI_Final_Project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82EF3EC6B4AC6E71DA78EE94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TFTI_Final_ProjectTests/Pods-TFTI_Final_ProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCD9AC7741F220685D944FB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5AFB39DD1E9F701D00D84659 /* Sources */ = {
@@ -481,6 +672,7 @@
 		};
 		5AFB3A0E1E9F701E00D84659 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D27DB675482B87C80371038B /* Pods-TFTI_Final_Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QKYX62U8AM;
@@ -494,6 +686,7 @@
 		};
 		5AFB3A0F1E9F701E00D84659 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B461A8A6268CEF5B283BDCA4 /* Pods-TFTI_Final_Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QKYX62U8AM;
@@ -507,6 +700,7 @@
 		};
 		5AFB3A111E9F701E00D84659 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C712B9B7FB91AC1F7B27B19 /* Pods-TFTI_Final_ProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +716,7 @@
 		};
 		5AFB3A121E9F701E00D84659 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B226C790A6EC3514EF4F38 /* Pods-TFTI_Final_ProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -537,6 +732,7 @@
 		};
 		5AFB3A141E9F701E00D84659 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CBFBA76CEA6A9EFC32C7701 /* Pods-TFTI_Final_ProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QKYX62U8AM;
@@ -551,6 +747,7 @@
 		};
 		5AFB3A151E9F701E00D84659 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CDD18871F0365B21A990E56 /* Pods-TFTI_Final_ProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QKYX62U8AM;

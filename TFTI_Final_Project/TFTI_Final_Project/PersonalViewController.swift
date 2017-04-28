@@ -10,6 +10,7 @@ import UIKit
 
 class PersonalViewController: UIViewController {
 
+    @IBOutlet weak var PersonalEventsTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
