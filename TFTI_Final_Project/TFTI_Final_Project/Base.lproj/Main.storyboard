@@ -93,7 +93,6 @@
                                 <color key="backgroundColor" red="0.30851900577545166" green="0.56388956308364868" blue="0.98588687181472778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="Ppn-pQ-5wK"/>
-                                    <constraint firstAttribute="width" constant="400" id="ZAZ-5P-13N"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

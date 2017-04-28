@@ -12,7 +12,6 @@
 		5A12470C1EADDF3E00EF2656 /* GlobalCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12470B1EADDF3E00EF2656 /* GlobalCellViewController.swift */; };
 		5A12470E1EAE10C100EF2656 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12470D1EAE10C100EF2656 /* TabBarViewController.swift */; };
 		5A1247101EAE119800EF2656 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A12470F1EAE119800EF2656 /* Event.swift */; };
-		5A1247121EAEBC4D00EF2656 /* create.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1247111EAEBC4D00EF2656 /* create.png */; };
 		5A1247141EAEEBB200EF2656 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247131EAEEBB200EF2656 /* DetailsViewController.swift */; };
 		5A1247161EAEF0F100EF2656 /* PersonalCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247151EAEF0F100EF2656 /* PersonalCellViewController.swift */; };
 		5A1247181EAEF17E00EF2656 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247171EAEF17E00EF2656 /* CreateViewController.swift */; };
@@ -27,10 +26,6 @@
 		5AFB39F31E9F701D00D84659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB39F11E9F701D00D84659 /* LaunchScreen.storyboard */; };
 		5AFB39FE1E9F701E00D84659 /* TFTI_Final_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB39FD1E9F701E00D84659 /* TFTI_Final_ProjectTests.swift */; };
 		5AFB3A091E9F701E00D84659 /* TFTI_Final_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB3A081E9F701E00D84659 /* TFTI_Final_ProjectUITests.swift */; };
-		5AFB3A171E9F73DA00D84659 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB3A161E9F73DA00D84659 /* earth.png */; };
-		5AFB3A191E9F73E600D84659 /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB3A181E9F73E600D84659 /* me.png */; };
-		5AFB3A1B1E9F73F300D84659 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB3A1A1E9F73F300D84659 /* settings.png */; };
-		5AFB3A1D1E9F761300D84659 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB3A1C1E9F761300D84659 /* user.png */; };
 		5AFB3A1F1E9F782D00D84659 /* eventviewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB3A1E1E9F782D00D84659 /* eventviewcell.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +52,6 @@
 		5A12470B1EADDF3E00EF2656 /* GlobalCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalCellViewController.swift; sourceTree = "<group>"; };
 		5A12470D1EAE10C100EF2656 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		5A12470F1EAE119800EF2656 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		5A1247111EAEBC4D00EF2656 /* create.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = create.png; path = ../../../../Desktop/create.png; sourceTree = "<group>"; };
 		5A1247131EAEEBB200EF2656 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		5A1247151EAEF0F100EF2656 /* PersonalCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCellViewController.swift; sourceTree = "<group>"; };
 		5A1247171EAEF17E00EF2656 /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
@@ -78,10 +72,6 @@
 		5AFB3A041E9F701E00D84659 /* TFTI_Final_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFTI_Final_ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFB3A081E9F701E00D84659 /* TFTI_Final_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFTI_Final_ProjectUITests.swift; sourceTree = "<group>"; };
 		5AFB3A0A1E9F701E00D84659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5AFB3A161E9F73DA00D84659 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = earth.png; path = ../../../../Desktop/earth.png; sourceTree = "<group>"; };
-		5AFB3A181E9F73E600D84659 /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = me.png; path = ../../../../Desktop/me.png; sourceTree = "<group>"; };
-		5AFB3A1A1E9F73F300D84659 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = ../../../../Desktop/settings.png; sourceTree = "<group>"; };
-		5AFB3A1C1E9F761300D84659 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = ../../../../Desktop/user.png; sourceTree = "<group>"; };
 		5AFB3A1E1E9F782D00D84659 /* eventviewcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventviewcell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,12 +154,7 @@
 				5A1247061EADA7BE00EF2656 /* Model */,
 				5A1247041EADA7A300EF2656 /* Controller */,
 				5AFB39EC1E9F701D00D84659 /* Main.storyboard */,
-				5A1247111EAEBC4D00EF2656 /* create.png */,
-				5AFB3A1C1E9F761300D84659 /* user.png */,
 				5AFB39EF1E9F701D00D84659 /* Assets.xcassets */,
-				5AFB3A1A1E9F73F300D84659 /* settings.png */,
-				5AFB3A181E9F73E600D84659 /* me.png */,
-				5AFB3A161E9F73DA00D84659 /* earth.png */,
 				5AFB39F11E9F701D00D84659 /* LaunchScreen.storyboard */,
 				5AFB39F41E9F701D00D84659 /* Info.plist */,
 				5AFB3A1E1E9F782D00D84659 /* eventviewcell.swift */,
@@ -305,12 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AFB3A1B1E9F73F300D84659 /* settings.png in Resources */,
-				5A1247121EAEBC4D00EF2656 /* create.png in Resources */,
-				5AFB3A191E9F73E600D84659 /* me.png in Resources */,
-				5AFB3A171E9F73DA00D84659 /* earth.png in Resources */,
 				5AFB39F31E9F701D00D84659 /* LaunchScreen.storyboard in Resources */,
-				5AFB3A1D1E9F761300D84659 /* user.png in Resources */,
 				5AFB39F01E9F701D00D84659 /* Assets.xcassets in Resources */,
 				5AFB39EE1E9F701D00D84659 /* Main.storyboard in Resources */,
 			);
