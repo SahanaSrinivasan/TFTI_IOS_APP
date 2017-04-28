@@ -12,21 +12,33 @@ import UIKit
 class Event {
     let datePosted: Date
     var dateOfEvent: Date
+    var isAttending: Bool
     var location: String
     let host: String
     let postId: String
     
-    init(id: String, host: String, location: String, dateOfEventString: String, datePostedString: String) {
+    
+    init(id: String, host: String, location: String, dateOfEventString: String, datePostedString: String, attending: Bool) {
         self.postId = id
         self.host = host
+        self.isAttending = attending
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = dateFormatter
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         self.dateOfEvent = dateFormatter.date(from: dateOfEventString)!
-        self.datePosted = dateFormatter.dated(from: datePostedString)!
+        self.datePosted = dateFormatter.date(from: datePostedString)!
+        self.location = location;
     }
     
-    func getTimeElapsedString() -> String {
-        let secondsSincePosted = -date.timeIntervalSinceNow
+    func getAttendance() -> Bool {
+        return self.isAttending
+    }
+    
+    func setAttendance(attendance: Bool) {
+        self.isAttending = attendance
+    }
+    
+    func getDatePostedString() -> String {
+        let secondsSincePosted = -datePosted.timeIntervalSinceNow
         let minutes = Int(secondsSincePosted / 60)
         if minutes == 1 {
             return "\(minutes) minute ago"
@@ -42,6 +54,7 @@ class Event {
             return "\(minutes / 1440) days ago"
         }
     }
+    
 
     
     
