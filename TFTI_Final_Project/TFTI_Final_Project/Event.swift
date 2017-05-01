@@ -23,7 +23,7 @@ class Event {
         self.host = host
         self.isAttending = attending
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateFormat = dateFormat
         self.dateOfEvent = dateFormatter.date(from: dateOfEventString)!
         self.datePosted = dateFormatter.date(from: datePostedString)!
         self.location = location;
