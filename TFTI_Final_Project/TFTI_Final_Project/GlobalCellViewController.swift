@@ -11,12 +11,17 @@ import UIKit
 class GlobalCellViewController: UITableViewCell {
 
     @IBOutlet weak var eventName: UILabel!
-    @IBOutlet weak var datePosted: UILabel!
+    @IBOutlet weak var dateOfEvent: UILabel!
+    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var goingImage: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        // Configure the view for the selected state
+    }
 
     /*
     // MARK: - Navigation

@@ -10,6 +10,9 @@
 		234301421EB33EC600077687 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234301411EB33EC600077687 /* GoogleService-Info.plist */; };
 		235541C31EB70E98005A469F /* EventFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235541C21EB70E98005A469F /* EventFeed.swift */; };
 		235541C61EB71C72005A469F /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235541C51EB71C72005A469F /* constants.swift */; };
+		235541C81EB8082F005A469F /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235541C71EB8082F005A469F /* CurrentUser.swift */; };
+		2361B0801EB877F800A7D95F /* testGlobalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361B07F1EB877F800A7D95F /* testGlobalController.swift */; };
+		2361B0821EB8780D00A7D95F /* testGlobalViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361B0811EB8780D00A7D95F /* testGlobalViewCell.swift */; };
 		28067684E2098280FE903A99 /* Pods_TFTI_Final_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0151F9674E45984A84B00278 /* Pods_TFTI_Final_ProjectTests.framework */; };
 		5A1247081EADDDED00EF2656 /* GlobalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247071EADDDED00EF2656 /* GlobalViewController.swift */; };
 		5A12470A1EADDE0000EF2656 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247091EADDDFF00EF2656 /* PersonalViewController.swift */; };
@@ -58,6 +61,10 @@
 		234301411EB33EC600077687 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		235541C21EB70E98005A469F /* EventFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeed.swift; sourceTree = "<group>"; };
 		235541C51EB71C72005A469F /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		235541C71EB8082F005A469F /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		2361B07E1EB8760300A7D95F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2361B07F1EB877F800A7D95F /* testGlobalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testGlobalController.swift; sourceTree = "<group>"; };
+		2361B0811EB8780D00A7D95F /* testGlobalViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testGlobalViewCell.swift; sourceTree = "<group>"; };
 		5A1247071EADDDED00EF2656 /* GlobalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalViewController.swift; sourceTree = "<group>"; };
 		5A1247091EADDDFF00EF2656 /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		5A12470B1EADDF3E00EF2656 /* GlobalCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalCellViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +151,8 @@
 				5A1247171EAEF17E00EF2656 /* CreateViewController.swift */,
 				5A1247191EAEF2DD00EF2656 /* LoginViewController.swift */,
 				5A12471B1EAEF2F000EF2656 /* SignupViewController.swift */,
+				2361B07F1EB877F800A7D95F /* testGlobalController.swift */,
+				2361B0811EB8780D00A7D95F /* testGlobalViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -154,6 +163,7 @@
 				5AFB39E41E9F701D00D84659 /* AppDelegate.swift */,
 				5A12470F1EAE119800EF2656 /* Event.swift */,
 				235541C21EB70E98005A469F /* EventFeed.swift */,
+				235541C71EB8082F005A469F /* CurrentUser.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -529,6 +539,7 @@
 				5A1247081EADDDED00EF2656 /* GlobalViewController.swift in Sources */,
 				5A1247141EAEEBB200EF2656 /* DetailsViewController.swift in Sources */,
 				5AFB39EB1E9F701D00D84659 /* ModelController.swift in Sources */,
+				2361B0821EB8780D00A7D95F /* testGlobalViewCell.swift in Sources */,
 				5A1247101EAE119800EF2656 /* Event.swift in Sources */,
 				5A12470E1EAE10C100EF2656 /* TabBarViewController.swift in Sources */,
 				5AFB3A1F1E9F782D00D84659 /* eventviewcell.swift in Sources */,
@@ -536,8 +547,10 @@
 				5A1247181EAEF17E00EF2656 /* CreateViewController.swift in Sources */,
 				5AFB39E91E9F701D00D84659 /* DataViewController.swift in Sources */,
 				5A12471C1EAEF2F000EF2656 /* SignupViewController.swift in Sources */,
+				2361B0801EB877F800A7D95F /* testGlobalController.swift in Sources */,
 				5AFB39E51E9F701D00D84659 /* AppDelegate.swift in Sources */,
 				5A12470A1EADDE0000EF2656 /* PersonalViewController.swift in Sources */,
+				235541C81EB8082F005A469F /* CurrentUser.swift in Sources */,
 				235541C61EB71C72005A469F /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,6 +591,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5AFB39ED1E9F701D00D84659 /* Base */,
+				2361B07E1EB8760300A7D95F /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

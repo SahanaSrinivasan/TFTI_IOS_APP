@@ -26,9 +26,9 @@ class CreateViewController: UIViewController {
         
         if let eventName = nameField.text{
             if let eventLocation = locationField.text{
-                print("calling add")
                 addEvent(name: eventName, location: eventLocation, dateOfEvent: date, username: (FIRAuth.auth()?.currentUser?.email)!)
-                print("called add")
+                performSegue(withIdentifier: "create-global", sender: nil)
+            
             } else {
                 let alert = UIAlertController(title: "Error!", message: "You must give a location for the event.", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))

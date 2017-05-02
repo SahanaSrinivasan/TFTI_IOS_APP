@@ -1,0 +1,84 @@
+
+/* Class = "UITabBarItem"; title = "personal"; ObjectID = "0oe-qz-Wa6"; */
+"0oe-qz-Wa6.title" = "personal";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "2ST-7m-Ncl"; */
+"2ST-7m-Ncl.text" = "Location";
+
+/* Class = "UIViewController"; title = "global"; ObjectID = "2uv-ca-Dbp"; */
+"2uv-ca-Dbp.title" = "global";
+
+/* Class = "UIViewController"; title = "personal"; ObjectID = "44i-7U-amx"; */
+"44i-7U-amx.title" = "personal";
+
+/* Class = "UILabel"; text = "Name of Event"; ObjectID = "Ceu-41-KuA"; */
+"Ceu-41-KuA.text" = "Name of Event";
+
+/* Class = "UITabBarItem"; title = "create"; ObjectID = "Fdp-uw-CSh"; */
+"Fdp-uw-CSh.title" = "create";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "Li5-nO-gIb"; */
+"Li5-nO-gIb.text" = "Email";
+
+/* Class = "UILabel"; text = "Location of Event"; ObjectID = "Nrr-RY-aa9"; */
+"Nrr-RY-aa9.text" = "Location of Event";
+
+/* Class = "UILabel"; text = "Name of Event"; ObjectID = "OQg-iy-9Ht"; */
+"OQg-iy-9Ht.text" = "Name of Event";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "Qym-Eo-DEn"; */
+"Qym-Eo-DEn.normalTitle" = "Log In";
+
+/* Class = "UIButton"; normalTitle = "Or, Log In"; ObjectID = "SkE-Lu-PjV"; */
+"SkE-Lu-PjV.normalTitle" = "Or, Log In";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Tmk-Qe-kwe"; */
+"Tmk-Qe-kwe.text" = "Name";
+
+/* Class = "UILabel"; text = "Sign Up"; ObjectID = "VER-Jw-yL8"; */
+"VER-Jw-yL8.text" = "Sign Up";
+
+/* Class = "UILabel"; text = "Date of Event"; ObjectID = "Yn0-U3-xha"; */
+"Yn0-U3-xha.text" = "Date of Event";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "ZJa-2I-DJl"; */
+"ZJa-2I-DJl.normalTitle" = "Sign Up";
+
+/* Class = "UILabel"; text = "Name of Event"; ObjectID = "bhZ-Ll-Vaj"; */
+"bhZ-Ll-Vaj.text" = "Name of Event";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "cF2-Le-7mQ"; */
+"cF2-Le-7mQ.text" = "Label";
+
+/* Class = "UILabel"; text = "Log In"; ObjectID = "dgh-ls-8Wn"; */
+"dgh-ls-8Wn.text" = "Log In";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "faX-Yc-aKl"; */
+"faX-Yc-aKl.text" = "Location";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "iZl-6P-8ou"; */
+"iZl-6P-8ou.text" = "Password";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "jDk-s2-Iab"; */
+"jDk-s2-Iab.text" = "Password";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "jLp-eG-6sg"; */
+"jLp-eG-6sg.text" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Create"; ObjectID = "lfH-Ne-XjQ"; */
+"lfH-Ne-XjQ.normalTitle" = "Create";
+
+/* Class = "UILabel"; text = "Create an Event"; ObjectID = "mea-DY-jIq"; */
+"mea-DY-jIq.text" = "Create an Event";
+
+/* Class = "UILabel"; text = "Date of Event"; ObjectID = "moR-JS-eRH"; */
+"moR-JS-eRH.text" = "Date of Event";
+
+/* Class = "UIButton"; normalTitle = "Or, Sign up"; ObjectID = "nYf-He-ZQ9"; */
+"nYf-He-ZQ9.normalTitle" = "Or, Sign up";
+
+/* Class = "UILabel"; text = "Date of Event"; ObjectID = "qAy-Ec-9ZC"; */
+"qAy-Ec-9ZC.text" = "Date of Event";
+
+/* Class = "UITabBarItem"; title = "global"; ObjectID = "s0H-Gt-lxT"; */
+"s0H-Gt-lxT.title" = "global";

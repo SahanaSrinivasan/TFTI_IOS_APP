@@ -10,9 +10,12 @@ import UIKit
 
 class PersonalViewController: UIViewController {
 
-    @IBOutlet weak var PersonalEventsTable: UITableView!
+    @IBOutlet weak var personalEventsTable: UITableView!
+    let currentUser = CurrentUser()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +24,8 @@ class PersonalViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*

@@ -358,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLI-ez-QwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2793" y="235"/>
+            <point key="canvasLocation" x="3090" y="304"/>
         </scene>
         <!--create-->
         <scene sceneID="FiZ-9o-iar">
@@ -463,11 +463,93 @@
                         <outlet property="datePicker" destination="PCC-zJ-fS3" id="WnR-ZR-MkJ"/>
                         <outlet property="locationField" destination="mPe-4c-1ve" id="XWF-G9-SBx"/>
                         <outlet property="nameField" destination="w97-4s-bfG" id="Vv0-UF-daG"/>
+                        <segue destination="2uv-ca-Dbp" kind="show" identifier="create-global" id="3Ca-NB-c0I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y6G-wn-enh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2408.8000000000002" y="1138.3808095952024"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Q73-zR-eeX">
+            <objects>
+                <viewController id="zgs-rz-i1f" customClass="testGlobalController" customModule="TFTI_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qxr-LI-GDj"/>
+                        <viewControllerLayoutGuide type="bottom" id="a44-RF-Jbi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GpU-nP-l7V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qPT-qr-0s7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="testglobalcell" rowHeight="95" id="33s-uP-vWA" customClass="testGlobalViewCell" customModule="TFTI_Final_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="33s-uP-vWA" id="wY7-V7-8Hq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name of Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3D5-Wb-Geh">
+                                                    <rect key="frame" x="35" y="11" width="184" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date of Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFZ-bj-M7h">
+                                                    <rect key="frame" x="35" y="37" width="184" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIu-kF-CPd">
+                                                    <rect key="frame" x="36" y="64" width="181" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="es4-Rm-ZWE">
+                                                    <rect key="frame" x="295" y="27" width="52" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateOfEvent" destination="vFZ-bj-M7h" id="jge-Du-U8n"/>
+                                            <outlet property="eventName" destination="3D5-Wb-Geh" id="Whj-xC-vnL"/>
+                                            <outlet property="goingImage" destination="es4-Rm-ZWE" id="1Kz-Np-qeM"/>
+                                            <outlet property="location" destination="cIu-kF-CPd" id="3Q0-S2-XOS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zgs-rz-i1f" id="Hbd-4V-3Cg"/>
+                                    <outlet property="delegate" destination="zgs-rz-i1f" id="O6t-CC-j5K"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a44-RF-Jbi" firstAttribute="top" secondItem="qPT-qr-0s7" secondAttribute="bottom" id="8e6-vt-Qp5"/>
+                            <constraint firstItem="qPT-qr-0s7" firstAttribute="leading" secondItem="GpU-nP-l7V" secondAttribute="leadingMargin" constant="-16" id="KZa-3M-j8G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qPT-qr-0s7" secondAttribute="trailing" constant="-16" id="Wix-2E-jmV"/>
+                            <constraint firstItem="qPT-qr-0s7" firstAttribute="top" secondItem="Qxr-LI-GDj" secondAttribute="bottom" constant="-20" id="ZhK-AJ-nPX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="foY-2m-ccj"/>
+                    <connections>
+                        <outlet property="table" destination="qPT-qr-0s7" id="x5r-Du-CGZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOW-GK-80i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.5999999999999" y="-911.69415292353835"/>
         </scene>
         <!--global-->
         <scene sceneID="zfA-Mo-5Vs">
@@ -485,7 +567,7 @@
                                 <rect key="frame" x="0.0" y="-32" width="375" height="650"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="1vO-RI-cYi" customClass="GlobalCellViewController" customModule="TFTI_Final_Project" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="globalcell" rowHeight="113" id="1vO-RI-cYi" customClass="GlobalCellViewController" customModule="TFTI_Final_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="113"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1vO-RI-cYi" id="kmo-JM-Rxn">
@@ -530,6 +612,8 @@
                                         <connections>
                                             <outlet property="datePosted" destination="moR-JS-eRH" id="OPI-u1-Cdz"/>
                                             <outlet property="eventName" destination="OQg-iy-9Ht" id="v68-Lb-u7t"/>
+                                            <outlet property="image" destination="a2s-yi-3Wa" id="o1L-LL-hYO"/>
+                                            <outlet property="location" destination="2ST-7m-Ncl" id="RKX-mx-oZo"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -578,9 +662,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2uv-ca-Dbp" kind="relationship" relationship="viewControllers" id="eGA-lb-GeD"/>
                         <segue destination="44i-7U-amx" kind="relationship" relationship="viewControllers" id="Mo5-R5-oTe"/>
                         <segue destination="cSE-M6-x3N" kind="relationship" relationship="viewControllers" id="Oua-jC-rYk"/>
+                        <segue destination="zgs-rz-i1f" kind="relationship" relationship="viewControllers" id="ii0-S8-MLr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Af-ne-tED" userLabel="First Responder" sceneMemberID="firstResponder"/>

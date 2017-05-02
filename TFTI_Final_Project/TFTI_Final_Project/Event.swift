@@ -14,12 +14,15 @@ class Event {
     var dateOfEvent: Date
     var isAttending: Bool
     var location: String
+    var name: String
     let host: String
     let postId: String
     
     
-    init(id: String, host: String, location: String, dateOfEventString: String, datePostedString: String, attending: Bool) {
+    
+    init(id: String, name: String, host: String, location: String, dateOfEventString: String, datePostedString: String, attending: Bool) {
         self.postId = id
+        self.name = name
         self.host = host
         self.isAttending = attending
         let dateFormatter = DateFormatter()
@@ -36,6 +39,8 @@ class Event {
     func setAttendance(attendance: Bool) {
         self.isAttending = attendance
     }
+    
+  
     
     func getDatePostedString() -> String {
         let secondsSincePosted = -datePosted.timeIntervalSinceNow
