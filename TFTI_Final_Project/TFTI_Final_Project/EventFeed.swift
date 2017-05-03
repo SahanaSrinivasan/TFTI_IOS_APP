@@ -26,7 +26,7 @@ func addEventToArray(event: Event) {
 func clearArray() {
     localEvents.removeAll()
 }
-func addEvent(name: String, location: String, dateOfEvent: String, username: String) {
+func addEvent(name: String, location: String, dateOfEvent: String, username: String, description: String) {
     let dbRef = FIRDatabase.database().reference()
 //    let data = UIImageJPEGRepresentation(postImage, 1.0)!
 //    let path = "\(firStorageImagesPath)/\(UUID().uuidString)"
@@ -34,7 +34,7 @@ func addEvent(name: String, location: String, dateOfEvent: String, username: Str
     let format = DateFormatter()
     format.dateFormat = dateFormat
     let date = format.string(from: Date())
-    let valueDictionary = [firNameNode: name, firHostNode: username, firDatePostedNode: date, firDateOfEventNode: dateOfEvent, firLocationNode: location]
+    let valueDictionary = [firNameNode: name, firHostNode: username, firDatePostedNode: date, firDateOfEventNode: dateOfEvent, firLocationNode: location, firDescriptionNode: description]
     
     dbRef.child(firEventsNode).childByAutoId().setValue(valueDictionary)
 }
