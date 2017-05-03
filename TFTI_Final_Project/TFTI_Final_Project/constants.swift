@@ -8,7 +8,7 @@
 
 import Foundation
 
-let dateFormat = "yyyy-MM-dd HH:mm.A"
+let dateFormat = "dd/MM/yyyy hh:mm a"
 
 let firUsersNode = "Users"
 let firGoingEventsNode = "goingEvents"
