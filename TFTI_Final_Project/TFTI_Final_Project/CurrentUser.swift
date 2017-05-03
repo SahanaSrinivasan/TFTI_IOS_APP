@@ -26,13 +26,6 @@ class CurrentUser {
     
   
     
-    /*
-     TODO:
-     
-     Retrieve a list of post ID's that the user has already opened and return them as an array of strings.
-     Note that our database is set up to store a set of ID's under the readPosts node for each user.
-     Make a query to Firebase using the 'observeSingleEvent' function (with 'of' parameter set to .value) and retrieve the snapshot that is returned. If the snapshot exists, store its value as a [String:AnyObject] dictionary and iterate through its keys, appending the value corresponding to that key to postArray each time. Finally, call completion(postArray).
-     */
     func getGoingEventIDs(completion: @escaping ([String]) -> Void) {
         var eventArray: [String] = []
         
@@ -51,13 +44,6 @@ class CurrentUser {
     
     
     
-    /*
-     TODO:
-     
-     Adds a new post ID to the list of post ID's under the user's readPosts node.
-     This should be fairly simple - just create a new child by auto ID under the readPosts node and set its value to the postID (string).
-     Remember to be very careful about following the structure of the User node before writing any data!
-     */
     func addNewReadPost(postID: String) {
         if goingEventIDs.contains(postID) == false {
             goingEventIDs.append(postID)
@@ -70,16 +56,11 @@ class CurrentUser {
     func leaveEvent(postID: String) {
         print("AYYMAMA")
         print(self.goingEventIDs)
-        /*if let go = self.goingEventIDs.index(of: postID) {
-            self.goingEventIDs.remove(at: go)
-            
-        }*/
         
         print(self.goingEventIDs)
     
         dbRef.child(firUsersNode).child(id).child(firGoingEventsNode).child(postID).removeValue()
         
-        //dbRef.child("Users/\(currentU)").removeValue()
         
         
     }

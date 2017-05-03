@@ -29,15 +29,6 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    /*
-     TODO:
-     
-     Implement sign up functionality using the Firebase Auth create user function.
-     If an error occurs, you should display an error message using a UIAlertController (e.g. if the password is less than 6 characters long).
-     Otherwise, using the user object that is returned from the createUser call, make a profile change request and set the user's displayName property to the name variable.
-     After committing the change request, you should perform a segue to the main screen using the identifier "signupToMain"
-     
-     */
     @IBAction func didAttemptSignup(_ sender: UIButton) {
         guard let email = emailField.text else { return }
         guard let password = passwordField.text else { return }
@@ -67,6 +58,10 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
             }
         })
     }
+    @IBAction func orLogInPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "signup-login", sender: self)
+    }
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

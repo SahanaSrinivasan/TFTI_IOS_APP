@@ -38,8 +38,8 @@ class testGlobalController: UIViewController, UITableViewDelegate, UITableViewDa
             if let events = events {
                 clearArray()
                 for i in events {
-                    print("HELLO")
-                    print(i.postId)
+                    //print("HELLO")
+                    //print(i.postId)
                     if (i.isAttending == false) {
                         print("ENTERED !ISATTENDING")
                         addEventToArray(event: i)
@@ -68,7 +68,7 @@ class testGlobalController: UIViewController, UITableViewDelegate, UITableViewDa
             let dateOfEvent = format.string(from: event.dateOfEvent)
         
             cell.eventName.text = event.name
-            print(event.name)
+            //print(event.name)
             cell.dateOfEvent.text = dateOfEvent
             cell.location.text = event.location
         }

@@ -10,6 +10,10 @@ import UIKit
 
 class PersonalCellViewController: UITableViewCell {
 
+    @IBOutlet weak var locationOfEvent: UILabel!
+    @IBOutlet weak var dateOfEvent: UILabel!
+    @IBOutlet weak var nameOfEvent: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

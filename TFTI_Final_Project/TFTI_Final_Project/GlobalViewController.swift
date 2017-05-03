@@ -20,7 +20,6 @@ class GlobalViewController: UIViewController, UITableViewDelegate, UITableViewDa
         eventsTable.delegate = self
         eventsTable.dataSource = self
         
-        print("ENTERED VIEWDIDLOAD GLOBAL")
 
         // Do any additional setup after loading the view.
     }
@@ -50,18 +49,13 @@ class GlobalViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("ENTERED numbers GLOBAL")
-        print(localEvents.count)
         return localEvents.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("ENTERED CELLS GLOBAL")
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "globalcell", for: indexPath) as! GlobalCellViewController
-        print("ONE")
         if let event = getEventFromIndexPath(indexPath: indexPath) {
-            print("TWO")
             /*if event.isAttending {
                 cell.goingImage.image = UIImage(named: "going")
             }
@@ -73,24 +67,11 @@ class GlobalViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let dateOfEvent = format.string(from: event.dateOfEvent)
             
             cell.eventName.text = event.name
-            print("NIGGAS")
             print(event.name)
             cell.dateOfEvent.text = dateOfEvent
             cell.location.text = event.location
         }
         return cell
     }
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

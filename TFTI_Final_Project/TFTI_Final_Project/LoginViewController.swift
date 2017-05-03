@@ -40,15 +40,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    /*
-     TODO:
-     
-     Implement login functionality using the Firebase Auth function for signing in.
-     You should check the result of the function call to see if it completes without error.
-     If an error occurs, display a message using a UIAlertController (e.g. "Sign in failed, try again")
-     Otherwise, perform a segue to the rest of the app using the identifier "loginToMain"
-     
-     */
     @IBAction func didAttemptLogin(_ sender: UIButton) {
         guard let emailText = emailField.text else { return }
         guard let passwordText = passwordField.text else { return }
@@ -71,6 +62,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 self.performSegue(withIdentifier: "loginToMain", sender: self)
             }
         })
+    }
+    @IBAction func orSignUpPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "login-signup", sender: self)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

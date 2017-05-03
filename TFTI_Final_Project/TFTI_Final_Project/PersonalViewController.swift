@@ -12,13 +12,13 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
 
     @IBOutlet weak var personalEventsTable: UITableView!
     let currentUser = CurrentUser()
+    var selectedEvent: Event?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         personalEventsTable.delegate = self
         personalEventsTable.dataSource = self
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +26,10 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
         // Dispose of any resources that can be recreated.
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        updateData()
+    }
+
     
     func updateData() {
         
@@ -35,55 +38,63 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
             if let events = events {
                 clearArray()
                 for i in events {
-                    print(i.name)
-                    if self.currentUser.goingEventIDs.contains(i.postId) {
+                    
+                    if (i.isAttending == true) {
                         addEventToArray(event: i)
                     }
                 }
-                print("UPDATE DATA")
                 self.personalEventsTable.reloadData()
             }
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.currentUser.goingEventIDs.count
+        return localEvents.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "testglobalcell", for: indexPath) as! testGlobalViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "personalcell", for: indexPath) as! PersonalCellViewController
         if let event = getEventFromIndexPath(indexPath: indexPath) {
             
             let format = DateFormatter()
             format.dateFormat = dateFormat
             let dateOfEvent = format.string(from: event.dateOfEvent)
             
-            cell.eventName.text = event.name
-            print(event.name)
+            cell.nameOfEvent.text = event.name
             cell.dateOfEvent.text = dateOfEvent
-            cell.location.text = event.location
+            cell.locationOfEvent.text = event.location
         }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("dont touch me please baby")
+        if let event = getEventFromIndexPath(indexPath: indexPath) {
+            selectedEvent = event
+            performSegue(withIdentifier: "personal-details", sender: self)
+        }
     }
     
-    
-
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let identifier = segue.identifier {
+            if identifier == "personal-details" {
+                let format = DateFormatter()
+                format.dateFormat = dateFormat
+                let dateOfEvent = format.string(from: (selectedEvent?.dateOfEvent)!)
+                print(dateOfEvent)
+                if let destination = segue.destination as? DetailsViewController {
+                    if let selected = selectedEvent {
+                        print(selected.name)
+                        destination.eventID = selected.postId
+                        destination.name = selected.name
+                        destination.date = dateOfEvent
+                        destination.location = selected.location
+                        destination.details = selected.description
+                    }
+                    
+                }
+            }
+        }
     }
-    */
+
 
 }

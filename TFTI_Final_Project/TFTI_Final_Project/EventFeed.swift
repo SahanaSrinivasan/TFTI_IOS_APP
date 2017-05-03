@@ -11,13 +11,12 @@ import UIKit
 import FirebaseDatabase
 
 var localEvents: [Event] = []
+var goingEvents: [Event] = []
 
 func getEventFromIndexPath(indexPath: IndexPath) -> Event? {
     //let sectionName = threadNames[indexPath.section]
     
     return localEvents[indexPath.row]
-//    print("No post at index \(indexPath.row)")
-//    return nil
 }
 
 func addEventToArray(event: Event) {
@@ -28,8 +27,6 @@ func clearArray() {
 }
 func addEvent(name: String, location: String, dateOfEvent: String, username: String, description: String) {
     let dbRef = FIRDatabase.database().reference()
-//    let data = UIImageJPEGRepresentation(postImage, 1.0)!
-//    let path = "\(firStorageImagesPath)/\(UUID().uuidString)"
 
     let format = DateFormatter()
     format.dateFormat = dateFormat
