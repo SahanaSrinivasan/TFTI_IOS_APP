@@ -12,6 +12,8 @@ class testGlobalController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var table: UITableView!
     let currentUser = CurrentUser()
+    var selectedEvent: Event?
+    
     
     
     override func viewDidLoad() {
@@ -38,7 +40,10 @@ class testGlobalController: UIViewController, UITableViewDelegate, UITableViewDa
                 for i in events {
                     print("HELLO")
                     print(i.postId)
-                    addEventToArray(event: i)
+                    if (i.isAttending == false) {
+                        print("ENTERED !ISATTENDING")
+                        addEventToArray(event: i)
+                    }
                 }
                 self.table.reloadData()
             }
@@ -61,7 +66,7 @@ class testGlobalController: UIViewController, UITableViewDelegate, UITableViewDa
             let format = DateFormatter()
             format.dateFormat = dateFormat
             let dateOfEvent = format.string(from: event.dateOfEvent)
-            
+        
             cell.eventName.text = event.name
             print(event.name)
             cell.dateOfEvent.text = dateOfEvent
@@ -71,7 +76,35 @@ class testGlobalController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("dont touch me")
+        if let event = getEventFromIndexPath(indexPath: indexPath) {
+            selectedEvent = event
+            print("PRINT NAME")
+            print(selectedEvent!.name)
+            performSegue(withIdentifier: "feed-details", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "feed-details" {
+                print("ENTERERED PREPARE")
+                let format = DateFormatter()
+                format.dateFormat = dateFormat
+                let dateOfEvent = format.string(from: (selectedEvent?.dateOfEvent)!)
+                print(dateOfEvent)
+                if let destination = segue.destination as? DetailsViewController {
+                    if let selected = selectedEvent {
+                        print("YA")
+                        print(selected.name)
+                        destination.eventID = selected.postId
+                        destination.name = selected.name
+                        destination.date = dateOfEvent
+                        destination.location = selected.location
+                    }
+                    
+                }
+            }
+        }
     }
 
 }

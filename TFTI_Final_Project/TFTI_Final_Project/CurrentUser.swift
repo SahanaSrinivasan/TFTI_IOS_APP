@@ -14,7 +14,7 @@ class CurrentUser {
     
     var username: String!
     var id: String!
-    var goingEventIDs: [String]?
+    var goingEventIDs: [String] = []
     
     let dbRef = FIRDatabase.database().reference()
     
@@ -23,6 +23,8 @@ class CurrentUser {
         username = currentUser?.displayName
         id = currentUser?.uid
     }
+    
+  
     
     /*
      TODO:
@@ -56,7 +58,9 @@ class CurrentUser {
      */
     func addNewReadPost(postID: String) {
         
-        goingEventIDs?.append(postID)
+        goingEventIDs.append(postID)
+        print("PRINTING EVENTIDS")
+        print(self.goingEventIDs)
         dbRef.child(firUsersNode).child(id).child(firGoingEventsNode).childByAutoId().setValue(postID)
         
         

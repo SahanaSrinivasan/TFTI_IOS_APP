@@ -9,8 +9,45 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-
+    let currentUser = CurrentUser()
+    var eventID: String = ""
+    var name: String = ""
+    var date: String = ""
+    var location: String = ""
+    var details: String = ""
+    var attending: Bool = false;
+    
+    @IBOutlet weak var joinButton: UIButton!
+    
+    @IBAction func joinPressed(_ sender: Any) {
+        
+        attending = !attending
+        if (attending == true) {
+            joinButton.setTitle("Leave", for: .normal)
+            print("CALLING ADD")
+            self.currentUser.addNewReadPost(postID: eventID)
+        } else {
+            joinButton.setTitle("Join", for: .normal)
+            
+        }
+    }
+    
+    
+    @IBAction func backPressed(_ sender: Any) {
+        performSegue(withIdentifier: "details-feed", sender: self)
+    }
+    @IBOutlet weak var nameOfEvent: UILabel!
+    @IBOutlet weak var descriptionOfEventLabel: UILabel!
+    @IBOutlet weak var locationOfEventLabel: UILabel!
+    @IBOutlet weak var dateOfEventLabel: UILabel!
+   
     override func viewDidLoad() {
+        attending = currentUser.goingEventIDs.contains(eventID)
+        nameOfEvent.text = name
+        dateOfEventLabel.text = date
+        locationOfEventLabel.text = location
+        descriptionOfEventLabel.text = details
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

@@ -21,16 +21,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         emailField.delegate = self
         passwordField.delegate = self
         print("entered login view")
+        
     }
     
     
     
     override func viewDidAppear(_ animated: Bool) {
         // Checks if user is already signed in and skips login
-        //if FIRAuth.auth()?.currentUser != nil {
-         //   print("already logged in")
-          //  self.performSegue(withIdentifier: "login-signup", sender: self)
-        //}
+        if FIRAuth.auth()?.currentUser != nil {
+            print("already logged in")
+           self.performSegue(withIdentifier: "loginToMain", sender: self)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
