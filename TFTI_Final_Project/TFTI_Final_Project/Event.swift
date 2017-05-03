@@ -15,14 +15,17 @@ class Event {
     var isAttending: Bool
     var location: String
     var name: String
+    var description: String
     let host: String
     let postId: String
     
     
     
-    init(id: String, name: String, host: String, location: String, dateOfEventString: String, datePostedString: String, attending: Bool) {
+    
+    init(id: String, name: String, description: String, host: String, location: String, dateOfEventString: String, datePostedString: String, attending: Bool) {
         self.postId = id
         self.name = name
+        self.description = description
         self.host = host
         self.isAttending = attending
         let dateFormatter = DateFormatter()

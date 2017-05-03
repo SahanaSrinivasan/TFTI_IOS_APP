@@ -50,6 +50,7 @@ func getEvents(user: CurrentUser, completion: @escaping ([Event]?) -> Void) {
             user.getGoingEventIDs(completion: {(goingEvents) in
                 for (key, object) in values! {
                     var eventHost = ""
+                    var eventDescription = ""
                     var eventDate = ""
                     var eventLocation = ""
                     var eventName = ""
@@ -60,6 +61,10 @@ func getEvents(user: CurrentUser, completion: @escaping ([Event]?) -> Void) {
                     
                     if let DBdate = object.value(forKey: firDateOfEventNode) as? String {
                         eventDate = DBdate
+                    }
+                    
+                    if let DBdescription = object.value(forKey: firDescriptionNode) as? String {
+                        eventDescription = DBdescription
                     }
                     
                     if let DBlocation = object.value(forKey: firLocationNode) as? String {
@@ -75,7 +80,7 @@ func getEvents(user: CurrentUser, completion: @escaping ([Event]?) -> Void) {
                     format.dateFormat = dateFormat
                     let currentDate = format.string(from: Date())
                     
-                    let eventObj = Event(id: key, name: eventName, host: eventHost, location: eventLocation, dateOfEventString: eventDate, datePostedString: currentDate , attending: isAttending)
+                    let eventObj = Event(id: key, name: eventName, description: eventDescription, host: eventHost, location: eventLocation, dateOfEventString: eventDate, datePostedString: currentDate , attending: isAttending)
                     eventArray.append(eventObj)
                 }
                 

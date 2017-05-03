@@ -49,6 +49,8 @@ class CurrentUser {
         })
     }
     
+    
+    
     /*
      TODO:
      
@@ -57,11 +59,27 @@ class CurrentUser {
      Remember to be very careful about following the structure of the User node before writing any data!
      */
     func addNewReadPost(postID: String) {
-        
-        goingEventIDs.append(postID)
-        print("PRINTING EVENTIDS")
+        if goingEventIDs.contains(postID) == false {
+            goingEventIDs.append(postID)
+            print("PRINTING EVENTIDS")
+            print(self.goingEventIDs)
+            dbRef.child(firUsersNode).child(id).child(firGoingEventsNode).childByAutoId().setValue(postID)
+        }
+    }
+    
+    func leaveEvent(postID: String) {
+        print("AYYMAMA")
         print(self.goingEventIDs)
-        dbRef.child(firUsersNode).child(id).child(firGoingEventsNode).childByAutoId().setValue(postID)
+        /*if let go = self.goingEventIDs.index(of: postID) {
+            self.goingEventIDs.remove(at: go)
+            
+        }*/
+        
+        print(self.goingEventIDs)
+    
+        dbRef.child(firUsersNode).child(id).child(firGoingEventsNode).child(postID).removeValue()
+        
+        //dbRef.child("Users/\(currentU)").removeValue()
         
         
     }

@@ -15,6 +15,7 @@ let firGoingEventsNode = "goingEvents"
 
 let firEventsNode = "Events"
 let firNameNode = "Name"
+let firDescriptionNode = "description"
 let firDatePostedNode = "datePosted"
 let firDateOfEventNode = "dateOfEvent"
 let firIsAttendingNode = "isAttending"

@@ -28,6 +28,7 @@ class DetailsViewController: UIViewController {
             self.currentUser.addNewReadPost(postID: eventID)
         } else {
             joinButton.setTitle("Join", for: .normal)
+            currentUser.leaveEvent(postID: eventID)
             
         }
     }
