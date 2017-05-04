@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TFTI_Final_Project/DetailsViewController.swift"
-            timestampString = "515468579.255466"
+            timestampString = "515552586.872549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TFTI_Final_Project/CurrentUser.swift"
-            timestampString = "515551602.002272"
+            timestampString = "515552586.872549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "leaveEvent(postID:)"
             landmarkType = "7">
          </BreakpointContent>

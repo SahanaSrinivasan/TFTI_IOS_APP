@@ -43,11 +43,17 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var dateOfEventLabel: UILabel!
    
     override func viewDidLoad() {
-        attending = currentUser.goingEventIDs.contains(eventID)
+        //attending = currentUser.goingEventIDs.contains(eventID)
         nameOfEvent.text = name
         dateOfEventLabel.text = date
         locationOfEventLabel.text = location
         descriptionOfEventLabel.text = details
+        if (attending) {
+            joinButton.setTitle("Leave", for: .normal)
+        } else {
+            joinButton.setTitle("Join", for: .normal)
+        }
+        
         
         super.viewDidLoad()
 

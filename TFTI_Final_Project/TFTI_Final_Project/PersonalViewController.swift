@@ -89,6 +89,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
                         destination.date = dateOfEvent
                         destination.location = selected.location
                         destination.details = selected.description
+                        destination.attending = true 
                     }
                     
                 }

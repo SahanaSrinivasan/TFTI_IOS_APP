@@ -101,6 +101,7 @@ class testGlobalController: UIViewController, UITableViewDelegate, UITableViewDa
                         destination.date = dateOfEvent
                         destination.location = selected.location
                         destination.details = selected.description
+                        destination.attending = false 
                     }
                     
                 }
