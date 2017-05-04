@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F65B9531EBAF10C0013F612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F65B9521EBAF10C0013F612 /* Main.storyboard */; };
 		234301421EB33EC600077687 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234301411EB33EC600077687 /* GoogleService-Info.plist */; };
 		235541C31EB70E98005A469F /* EventFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235541C21EB70E98005A469F /* EventFeed.swift */; };
 		235541C61EB71C72005A469F /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235541C51EB71C72005A469F /* constants.swift */; };
 		235541C81EB8082F005A469F /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235541C71EB8082F005A469F /* CurrentUser.swift */; };
 		2361B0801EB877F800A7D95F /* testGlobalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361B07F1EB877F800A7D95F /* testGlobalController.swift */; };
 		2361B0821EB8780D00A7D95F /* testGlobalViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361B0811EB8780D00A7D95F /* testGlobalViewCell.swift */; };
-		23A4B4DA1EB9BE3F003FF77A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A4B4D91EB9BE3F003FF77A /* Main.storyboard */; };
 		28067684E2098280FE903A99 /* Pods_TFTI_Final_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0151F9674E45984A84B00278 /* Pods_TFTI_Final_ProjectTests.framework */; };
 		5A1247081EADDDED00EF2656 /* GlobalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247071EADDDED00EF2656 /* GlobalViewController.swift */; };
 		5A12470A1EADDE0000EF2656 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1247091EADDDFF00EF2656 /* PersonalViewController.swift */; };
@@ -57,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		0151F9674E45984A84B00278 /* Pods_TFTI_Final_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFTI_Final_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F65B9521EBAF10C0013F612 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../Main.storyboard; sourceTree = "<group>"; };
 		1AA22D5ABC1BD603AB3C2378 /* Pods_TFTI_Final_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFTI_Final_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		234301411EB33EC600077687 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		235541C21EB70E98005A469F /* EventFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFeed.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		235541C71EB8082F005A469F /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		2361B07F1EB877F800A7D95F /* testGlobalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testGlobalController.swift; sourceTree = "<group>"; };
 		2361B0811EB8780D00A7D95F /* testGlobalViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testGlobalViewCell.swift; sourceTree = "<group>"; };
-		23A4B4D91EB9BE3F003FF77A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../Main.storyboard; sourceTree = "<group>"; };
 		5A1247071EADDDED00EF2656 /* GlobalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalViewController.swift; sourceTree = "<group>"; };
 		5A1247091EADDDFF00EF2656 /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		5A12470B1EADDF3E00EF2656 /* GlobalCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalCellViewController.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 		5AFB39E31E9F701D00D84659 /* TFTI_Final_Project */ = {
 			isa = PBXGroup;
 			children = (
-				23A4B4D91EB9BE3F003FF77A /* Main.storyboard */,
+				0F65B9521EBAF10C0013F612 /* Main.storyboard */,
 				235541C41EB71C4C005A469F /* App Utilities */,
 				5A1247061EADA7BE00EF2656 /* Model */,
 				5A1247041EADA7A300EF2656 /* Controller */,
@@ -366,9 +366,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFB39F31E9F701D00D84659 /* LaunchScreen.storyboard in Resources */,
+				0F65B9531EBAF10C0013F612 /* Main.storyboard in Resources */,
 				234301421EB33EC600077687 /* GoogleService-Info.plist in Resources */,
 				5AFB39F01E9F701D00D84659 /* Assets.xcassets in Resources */,
-				23A4B4DA1EB9BE3F003FF77A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
