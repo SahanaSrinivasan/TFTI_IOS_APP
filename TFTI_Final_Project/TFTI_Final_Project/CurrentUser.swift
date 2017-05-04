@@ -47,19 +47,17 @@ class CurrentUser {
     func addNewReadPost(postID: String) {
         if goingEventIDs.contains(postID) == false {
             goingEventIDs.append(postID)
-            print("PRINTING EVENTIDS")
-            print(self.goingEventIDs)
-            dbRef.child(firUsersNode).child(id).child(firGoingEventsNode).childByAutoId().setValue(postID)
+            //print("PRINTING EVENTIDS")
+            //print(self.goingEventIDs)
+            dbRef.child(firUsersNode).child(id).child(firGoingEventsNode).child(postID).setValue(postID)
         }
     }
     
     func leaveEvent(postID: String) {
         print("AYYMAMA")
-        print(self.goingEventIDs)
         
-        print(self.goingEventIDs)
-    
-        dbRef.child(firUsersNode).child(id).child(firGoingEventsNode).child(postID).removeValue()
+        print(postID)
+        dbRef.child(firUsersNode).child(id).child(firGoingEventsNode).child(postID).setValue(nil)
         
         
         

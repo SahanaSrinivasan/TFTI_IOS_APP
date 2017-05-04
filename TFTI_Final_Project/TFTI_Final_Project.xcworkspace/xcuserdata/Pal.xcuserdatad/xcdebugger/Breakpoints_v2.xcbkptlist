@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TFTI_Final_Project/CurrentUser.swift"
-            timestampString = "515476466.52805"
+            timestampString = "515551602.002272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "leaveEvent(postID:)"
             landmarkType = "7">
          </BreakpointContent>
